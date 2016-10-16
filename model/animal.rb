@@ -1,6 +1,6 @@
 class Animal
   NAMES = ["Butch", "Percy", "Ash", "Leo", "Milly", "Billy", "Pancake", "Waffle", "Periwinkle", "Latte", "Mango", "Luna", "Mongo"]
-  attr_reader :id, :name
+  attr_reader :id, :name, :age
 
   def initialize(args = {})
     @id = "#{self.class} #{args.fetch(:id, 0)}"
