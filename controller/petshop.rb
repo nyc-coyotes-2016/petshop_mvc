@@ -23,8 +23,10 @@ class PetShop
   end
 
   def see_all_animals
-    @animals.each do |animal|
-      Interface.display_animal_stats(animal)
+    if ARGV.any?
+      @animals.each do |animal|
+        Interface.display_animal_stats(animal)
+      end
     end
   end
 end
